@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns#" style="--scroll_width:0px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<meta name="format-detection" content="telephone=no">
+
+		<link rel="stylesheet" href="ion.rangeSlider.min.css?b">
+		<link rel="stylesheet" href="styles.min.css?c">
+
+		<link rel="stylesheet" href="response_1199.min.css?b" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="response_1024.min.css?b" media="(max-width: 1024px)">
+		<link rel="stylesheet" href="response_767.min.css?b" media="(max-width: 767px)">
+		<link rel="stylesheet" href="response_479.min.css?b" media="(max-width: 479px)">
+
+        
+</head>
+
+    <body>
+		<div class="wrap">
+			<div class="main">
+
+                
+    </section>
+
+    <section class="metronome">
+    <div class="cont">
+        <div class="block">
+
+            <div class="box">
+                <div class="bpm">
+                    
+                    <div class="val">120</div>
+
+                    <div class="losbpms">BPM</div>
+
+
+                </div>
+
+                <div class="desc">Allegro</div>
+                
+
+                <div class="bar flex">
+                    <button type="button" class="minus"><svg width="32" height="32"><use xlink:href="sprite.svg#minus"></use></svg></button>
+
+                    <div class="wrap_range">
+                        <span class="irs irs--round js-irs-0" style="display: none;"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">1</span><span class="irs-max" style="visibility: visible;">240</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 47.7868%;">120</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 49.7989%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 47.8688%;"><i></i><i></i><i></i></span></span><input data-range="range-slider" type="text" data-min="1" data-max="240" name="price_range" value="120" data-postfix="" data-step="1" style="opacity: 0; visibility: hidden;" autocomplete="off" class="irs-hidden-input" tabindex="-1" readonly="">
+                    </div>
+
+                    <button type="button" class="plus"><svg width="32" height="32"><use xlink:href="sprite.svg#plus"></use></svg></button>
+                </div>
+
+
+                <div class="beat">
+                
+
+                    <div class="beats flex">
+                    <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div></div>
+                </div>
+
+                <div class="buttons flex">
+                    <button type="button" class="start flex">
+                            <span class="icon">
+                                <svg width="16" height="16" class="ic_start"><use xlink:href="sprite.svg#start"></use></svg>
+                                <svg width="16" height="16" class="ic_stop"><use xlink:href="sprite.svg#stop"></use></svg>
+                            </span>
+
+                        <span class="text_play">Iniciar</span>
+                        <span class="text_stop">Detener</span>
+                    </button>
+                                    
+<!--
+                    <button id="btn-tap" class="tap flex">
+                        <svg width="20" height="20" class="icon"><use xlink:href="sprite.svg#tap"></use></svg>
+                        Toque BPM
+                    </button>
+-->
+                </div>
+
+                <div class="settings">
+                    <div class="line flex">
+                        <div class="line_name">Pulsos</div>
+
+                        <div class="amount">
+                            <div class="val flex">
+                                <button type="button" class="minus"><svg width="22" height="22"><use xlink:href="sprite.svg#minus"></use></svg></button>
+
+                                <input type="text" id="beatsCount" name="beatsCount" value="4" data-minimum="1" data-maximum="12" data-step="1" class="input beatsCount" maxlength="2" autocomplete="off" disabled="">
+
+                                <button type="button" class="plus"><svg width="22" height="22"><use xlink:href="sprite.svg#plus"></use></svg></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line">
+                        <div class="checkbox">
+                            <label class="label_check">
+                                <input type="checkbox" id="stress_first_beat" name="stress_first_beat" autocomplete="off">
+
+                                <span class="check_text">Acentuar primer tiempo</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="line flex">
+                        <div class="checkbox">
+                            <label class="label_check">
+                                <span class="check_text">Subdivisiones</span>
+                            </label>
+                        </div>
+
+                        <div class="">
+                            <div class="controls flex">
+                                <input type="radio" id="subdivision-1" name="subdivisions" value="1" class="hidden js-subdivisions-change" data-pattern="1" autocomplete="off" checked="">
+                                <label for="subdivision-1"><img src="sub1.webp"></label>
+                                <input type="radio" id="subdivision-2" name="subdivisions" value="2" class="hidden js-subdivisions-change" data-pattern="1-1" autocomplete="off">
+                                <label for="subdivision-2"><img src="sub2.webp"></label>
+                                <input type="radio" id="subdivision-3" name="subdivisions" value="3" class="hidden js-subdivisions-change" data-pattern="1-1-1" autocomplete="off">
+                                <label for="subdivision-3"><img src="sub3.webp"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    window.bpmTitles = {"20":"Larghissimo","40":"Grave","45":"Lento","50":"Largo","60":"Adagio","70":"Adagietto","85":"Andante","97":"Moderato","109":"Allegretto","132":"Allegro","140":"Vivace","177":"Presto","240":"Prestissimo"};
+    window.withoutCacheBpm = false;
+</script>
+    <div class="cont">
+
+</div>
+
+
+
+			</div>
+
+
+
+		<div class="supports_error">
+            La versión de su navegador no está actualizada. Le recomendamos que lo actualice a la última versión&lt;br&gt; o utilice otro navegador más moderno.
+		</div>
+
+        <script src="bundle.js"></script>
+	
+<div id="tldx-toast-container"></div><div id="tldx-webext-container"></div></body><tldv-webext-integration id="tldx-lmi-shadow-root"></tldv-webext-integration></html>
