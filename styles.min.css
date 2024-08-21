@@ -89,7 +89,7 @@ input[type=number]:hover {
     --scroll_width: 17px;
     --font_family: 'Montserrat', 'Open Sans', sans-serif;
     --bg: #fff;
-    --bg2: #f5f7fb;
+    --bg2: #fff;
     --color2: #21232f
 }
 
